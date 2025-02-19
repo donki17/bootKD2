@@ -1,0 +1,49 @@
+.container {
+    width: 800px; /* Задайте желаемую ширину контейнера */
+    height: 300px;
+    position: relative; /* Важно для позиционирования target и элементов */
+}
+
+.target {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%); /* Центрирование по вертикали */
+    border: 2px dashed #ccc;
+    background-color: #fff; /* Начальный фон */
+}
+
+.element {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+    cursor: grab;
+}
+
+.element1 {
+    top: 25%;
+    background-color: red;
+}
+
+.element2 {
+    top: 65%;
+    background-color: blue;
+}
+
+.element3 {
+    top: 45%;
+    background-color: green;
+}
+
+.note {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.ui-draggable-dragging {
+    z-index: 100;
+}
